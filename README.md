@@ -1,6 +1,8 @@
 [Github Pages](https://cunodngaf.github.io/Chaos-Organizer-FE/)
 [![Build status](https://ci.appveyor.com/api/projects/status/2mac5jpn759rj8os/branch/main?svg=true)](https://ci.appveyor.com/project/CunoDnGaF/chaos-organizer-fe/branch/main)
 
+### Для входа в приложение нужно ввести логин: admin и пароль: admin
+
 ## Ключевые функции
 
 ### Основные функции:
