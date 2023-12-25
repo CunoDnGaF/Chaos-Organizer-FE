@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chaos Organizer</title>
+</head>
+<body>
+	<div class="root" id="root">
+    <h1>Chaos Organizer</h1>
+    <div class="chat-container unactive">
+      <input type="button" id="exit-button" name="exit-button" class="exit-button" value="Log out">
+      <div class="pin-container unactive">
+        <input type="button" id="pin-delete-button" name="pin-delete-button" class="pin-delete-button unactive">
+        <div class="pin-message"></div>
+      </div>
+      <div class="chat-body">
+        <div class="chat-screen"></div>
+        <div class="chat-screen-select unactive"></div>
+        <div class="chat-basement">
+          <div class="file-container">
+            <input class="media-button select" type="button" id="select">
+          </div>
+          <div class="file-container" id="audio">
+            <input class="media-button audio" type="button">
+          </div>
+          <div class="file-container" id="video">
+            <input class="media-button video" type="button">
+          </div>
+          <div class="file-container" id="photo">
+            <input class="media-button photo" type="button">
+          </div>
+          <div class="file-container" id="file">
+            <input class="overlapped" type="file">
+            <span class="overlap"></span>
+          </div>
+          <form class="message-form">
+            <input type="text" name="message-field" class="message-field" placeholder="Type your message here">
+            <button type="submit" name="message-button" class="message-button"></button>
+          </form> 
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="login-modal">
+      <h2 class="modal-title">Введите логин и пароль</h2>
+      <label for="login-input">Логин</label>
+      <input type="text" id="login-input" name="login-input" class="modal-input">
+      <label for="password-input">Пароль</label>
+      <input type="password" id="password-input" name="password-input" class="modal-input">
+      <input type="button" id="login-button" name="login-button" class="modal-button" value="Продолжить">
+    </div>
+    <div class="modal unactive" id="edit-modal">
+      <h2 class="modal-title">Введите изменения</h2>
+      <label for="edit-input">Ваше сообщение</label>
+      <textarea id="edit-input" name="edit-input" class="edit-input"></textarea>
+      <input type="button" id="modal-edit-button" name="modal-edit-button" class="modal-button" value="Изменить">
+    </div>
+    <div class="modal unactive" id="video-modal">
+      <h2 class="modal-title">Запись</h2>
+      <video class="video-player" controls></video>
+    </div>
+    <div class="modal unactive" id="photo-modal">
+      <h2 class="modal-title">Запись</h2>
+      <video class="video-player" autoplay></video>
+      <canvas class="canvas" id="canvas"></canvas>
+      <input type="button" id="photo-modal-button" name="photo-modal-button" class="photo-modal-button">
+    </div>
+    <div class="coordinates-modal unactive">
+      <span class="modal-warning">Что-то пошло не так <br>
+        <br>
+        К сожалению, нам не удалось определить ваше местоположение, пожалуйста, дайте разрешение на использование геолокации, либо введите координаты вручную <br>
+        <br>
+        Широта и долгота через запятую</span>
+      <input type="text" name="coordinates-modal-field" class="coordinates-modal-field" placeholder="Type here">
+      <div class="coordinates-modal-buttons">
+        <input type="button" id="coordinates-modal-close" name="coordinates-modal-close" class="modal-button" value="Отмена">
+        <input type="button" id="coordinates-modal-ok" name="coordinates-modal-ok" class="modal-button" value="Ок">
+      </div>
+  </div>
+  </div>
+</body>
+</html>
